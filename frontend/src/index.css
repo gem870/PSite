@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+  background-color: #000300;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  
+}
+
+.scroll-container {
+  /* width: 300px;           
+  height: 200px;            */
+  overflow-y: auto;        /* Enable vertical scrolling */
+  overflow-x: hidden;      /* Hide horizontal scrolling */
+}
+
+
+.scroll-container::-webkit-scrollbar {
+  width: 8px;              /* Set the width of the scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #0f0e0e;  /* Set the color of the scrollbar thumb */
+  border-radius: 10px;     /* Round the corners of the scrollbar thumb */
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: #413636;  /* Change the color on hover */
+}
+
+/* Optional: For Firefox */
+.scroll-container {
+  scrollbar-width:thin;          /* Thin scrollbar */
+  scrollbar-color: #035f5f #000000;  /* Thumb color and track color */
+}
+
+.scroll-hidde {
+  /* width: 300px;           
+  height: 200px;            */
+  scrollbar-width:none;          /* Thin scrollbar */
+  scrollbar-color: #035f5f #000000;  /* Thumb color and track color */
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
